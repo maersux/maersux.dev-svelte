@@ -1,0 +1,89 @@
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/700.css';
+@import '@fontsource/inter/800.css';
+
+:root {
+	--font-family: "Inter", Arial, 'Helvetica Neue', sans-serif;
+    --color-text: #d4d4d8;
+    --color-primary: #e879f9;
+    --color-secondary: #86198f;
+
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --font-weight-black: 800;
+
+    --animation-duration: 0.2s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    font-family: var(--font-family), sans-serif;
+    color: var(--color-text);
+	background: linear-gradient(45deg, #1d011f 0%, #120113 25%, #120113 75%, #1d011f 100%);
+    line-height: 1.15;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    max-width: 64rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    font-weight: var(--font-weight-black);
+}
+
+a {
+	color: var(--color-text);
+	text-decoration: none;
+    transition: color var(--animation-duration) ease-in-out;
+}
+
+a:hover {
+    color: var(--color-primary);
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 2rem;
+	text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+	h1 {
+		font-size: 2.4rem;
+	}
+}
+
+.visually-hidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: auto;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	white-space: nowrap;
+}
+
+.text-gradient {
+    color: transparent;
+    background-clip: text;
+    background-color: var(--color-primary);
+    background-image: linear-gradient(to bottom right, var(--color-secondary) 0%, var(--color-primary) 100%);
+}
