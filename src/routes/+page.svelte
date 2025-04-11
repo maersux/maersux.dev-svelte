@@ -1,6 +1,6 @@
 <script lang="ts">
-	import MainHeading from '../components/main-heading.svelte';
-  import Socials from '../components/socials.svelte';
+	import MainHeading from '$/components/main-heading.svelte';
+  import Socials from '$/components/socials.svelte';
 </script>
 
 <svelte:head>
@@ -24,23 +24,23 @@
 </svelte:head>
 
 <section>
-	<MainHeading />
+  <MainHeading />
   <Socials />
 </section>
 
 <style>
-  section {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 2rem;
-      padding: 2rem 0;
-  }
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--space-md);
+        padding: var(--space-md)
+    }
 
-  @media only screen and (min-width: 768px) {
-      section {
-          padding: 4rem 0;
-      }
-  }
+    @media only screen and (min-width: 768px) {
+        section {
+            padding: var(--space-lg);
+        }
+    }
 </style>

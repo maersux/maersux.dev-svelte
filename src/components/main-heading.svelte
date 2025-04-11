@@ -97,7 +97,7 @@
     .typewriter::after {
         content: '|';
         margin-left: 0.2rem;
-        animation: blink 0.7s steps(2, start) infinite;
+        animation: blink 1s steps(2, start) infinite;
         color: var(--text-color);
     }
 

@@ -1,38 +1,19 @@
-# sv
+# maersux.dev with svelte
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+simple personal website, just a basic one-pager with some fancy typing effect.
 
-## Creating a project
+if you'd like to run this website on your machine to yoink some stuff:
 
-If you're seeing this, you've probably already done this step. Congrats!
+## installation
 
-```bash
-# create a new project in the current directory
-npx sv create
+- clone git repository: `git clone https://github.com/maersux/maersux.dev.git`
+- navigate to project: `cd maersux.dev`
+- install dependencies: `npm install`
 
-# create a new project in my-app
-npx sv create my-app
-```
+## usage
 
-## Developing
+- start development server: `npm run dev`
+- and open `http://localhost:5173` in your browser of choice
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## license
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). Feel free to use, modify, and distribute the code as per the terms of the license.
